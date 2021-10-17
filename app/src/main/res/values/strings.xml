@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">In Class 2b</string>
+    <string name="Inches_input">Inches:</string>
+    <string name="Inches_value">Enter Inch Value</string>
+    <string name="Results">Result:</string>
+    <string name="To_meters">To Meters</string>
+    <string name="To_Feet">To Feet</string>
+    <string name="To_Miles">To Miles</string>
+    <string name="To_Clear">Clear All</string>
+    <string name="Convert_Button">Convert</string>
+    <string name="Toast_Empty_input">Error: Inch field cannot be Empty</string>
+    <string name="Toast_Special_characters">Error: Inch field cannot accept String or Special Characters</string>
+    <string name="Feet_unit">Feet</string>
+    <string name="Meters_unit">Meters</string>
+    <string name="Miles_unit">Miles</string>
+    <string name="Empty_string"> </string>
+</resources>

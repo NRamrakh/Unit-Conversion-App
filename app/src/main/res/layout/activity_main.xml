@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewInches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/Inches_input"
+        android:textColorLink="#FF03DAC5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextInchValue"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextInchValue"
+        android:layout_width="318dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:ems="10"
+        android:hint="@string/Inches_value"
+        android:inputType="number"
+        android:textColorHighlight="@color/purple_500"
+        android:textColorLink="@color/purple_500"
+        android:textCursorDrawable="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewInches"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Results"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInches" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult">
+
+        <RadioButton
+            android:id="@+id/radioButtonMeters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/To_meters"
+            android:buttonTint="@color/purple_500"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFeet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/To_Feet"
+            android:buttonTint="@color/purple_500"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/To_Miles"
+            android:buttonTint="@color/purple_500"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonClearAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/To_Clear"
+            android:buttonTint="@color/purple_500"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="356dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/purple_200"
+        android:text="@string/Convert_Button"
+        android:textColor="#090909"
+        app:backgroundTint="#C1BFBF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textViewResultValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewResult"
+        app:layout_constraintStart_toStartOf="@+id/editTextInchValue"
+        app:layout_constraintTop_toTopOf="@+id/textViewResult" />
+</androidx.constraintlayout.widget.ConstraintLayout>
