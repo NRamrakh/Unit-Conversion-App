@@ -4,7 +4,7 @@ This is a Distance Conversion calculator. The user can enter a value in inches a
 
 **Languages used:** XML, Java
 
-**Framework used:** Android Studio
+**IDE used:** Android Studio
 
 # Snapshot of the app
 
